@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DemandeController">
+   <children>
+      <StackPane fx:id="root">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="786.0" prefWidth="1284.0">
+               <children>
+                  <TableView fx:id="table" layoutX="26.0" layoutY="125.0" prefHeight="623.0" prefWidth="1199.0">
+                     <columns>
+                        <TableColumn fx:id="colmat" prefWidth="262.0" text="Matricule" />
+                        <TableColumn fx:id="colnom" prefWidth="317.0" text="Nom" />
+                        <TableColumn fx:id="colprenom" prefWidth="340.0" text="Prenom" />
+                        <TableColumn fx:id="colsexe" prefWidth="109.0" text="Sexe" />
+                     </columns>
+                  </TableView>
+                  <JFXTextField fx:id="trecherche" layoutX="829.0" layoutY="83.0" />
+                  <ImageView fx:id="irecherche" fitHeight="37.0" fitWidth="43.0" layoutX="1005.0" layoutY="83.0" onMouseClicked="#onSearch" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

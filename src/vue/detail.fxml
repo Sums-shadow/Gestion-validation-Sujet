@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="p2" prefHeight="746.0" prefWidth="1293.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailController">
+ <stylesheets>
+        <URL value="@/style/app.css" />
+    </stylesheets>  
+    <children>
+      <StackPane fx:id="root">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="1293.0">
+               <children>
+                  <AnchorPane layoutX="161.0" layoutY="95.0" prefHeight="490.0" prefWidth="436.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="61.0" prefHeight="25.0" prefWidth="64.0" text="Nom: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="26.0" prefWidth="102.0" text="Prenom: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="155.0" prefHeight="26.0" prefWidth="102.0" text="Sexe: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="209.0" prefHeight="26.0" prefWidth="102.0" text="Promotion: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="261.0" prefHeight="26.0" prefWidth="102.0" text="Faculté: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="314.0" prefHeight="26.0" prefWidth="116.0" text="Departement: ">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="enom" layoutX="130.0" layoutY="63.0" prefHeight="26.0" prefWidth="286.0" text="Ngbowa">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="eprenom" layoutX="128.0" layoutY="111.0" prefHeight="26.0" prefWidth="286.0" text="Ezechiel">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="esexe" layoutX="128.0" layoutY="155.0" prefHeight="26.0" prefWidth="286.0" text="M">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="126.0" layoutY="209.0" prefHeight="26.0" prefWidth="286.0" text="G3">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="128.0" layoutY="261.0" prefHeight="26.0" prefWidth="286.0" text="Science">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="130.0" layoutY="314.0" prefHeight="26.0" prefWidth="286.0" text="Math-Info">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="240.0" layoutY="69.0" prefHeight="52.0" prefWidth="240.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="16.0" prefHeight="21.0" prefWidth="208.0" text="Information sur l'etudiant">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="668.0" layoutY="95.0" prefHeight="490.0" prefWidth="436.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <Pane fx:id="otherinfo" layoutX="14.0" layoutY="51.0">
+                           <children>
+                              <Label prefHeight="26.0" prefWidth="116.0" text="Titre: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="168.0" prefHeight="26.0" prefWidth="116.0" text="Domaine: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="domaine" layoutX="116.0" layoutY="168.0" prefHeight="26.0" prefWidth="286.0" text="Base de données">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="titre" alignment="TOP_LEFT" layoutY="26.0" prefHeight="134.0" prefWidth="410.0" text="Mise en place d'une application Client/Serveur pour la Gestion des patients.  cas de l'hôpital SEMAR" wrapText="true">
+                                 <font>
+                                    <Font name="System Italic" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="date" layoutX="116.0" layoutY="359.0" prefHeight="26.0" prefWidth="286.0" text="16-09-2021">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="260.0" prefHeight="26.0" prefWidth="116.0" text="Co-Directeur: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="212.0" prefHeight="26.0" prefWidth="116.0" text="Directeur: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="308.0" prefHeight="26.0" prefWidth="116.0" text="Etat: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="codirecteur" layoutX="116.0" layoutY="260.0" prefHeight="26.0" prefWidth="286.0" text="Assistant Deo MUNDUKU">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="etat" layoutX="116.0" layoutY="308.0" prefHeight="26.0" prefWidth="286.0" text="Non Confirmé">
+                                 <font>
+                                    <Font name="System Bold Italic" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="359.0" prefHeight="26.0" prefWidth="116.0" text="Date: ">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="directeur" layoutX="116.0" layoutY="212.0" prefHeight="26.0" prefWidth="286.0" text="Professeur Christian BOPE">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label fx:id="lnoInfo" layoutX="37.0" layoutY="190.0" prefHeight="52.0" prefWidth="363.0" text="Aucun sujet soumis" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="747.0" layoutY="69.0" prefHeight="52.0" prefWidth="240.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="16.0" prefHeight="21.0" prefWidth="208.0" text="Information sur le sujet">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnConfirmer" layoutX="366.0" layoutY="611.0" onAction="#onConfirmer" prefHeight="61.0" prefWidth="228.0" style="-fx-border-color: black; -fx-border-radius: 10;" text="Confirmé" />
+                  <JFXButton fx:id="btnRejet" layoutX="668.0" layoutY="611.0" onAction="#onRejet" prefHeight="61.0" prefWidth="228.0" style="-fx-border-color: red; -fx-border-radius: 10;" text="Rejeter" />
+                  <AnchorPane fx:id="pstate" layoutX="1119.0" layoutY="69.0" prefHeight="41.0" prefWidth="174.0" style="-fx-border-color: red; -fx-rotate: 50;">
+                     <children>
+                        <Text fx:id="state" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rejeter" wrappingWidth="150.49006843566895">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="iclose" fitHeight="52.0" fitWidth="71.0" layoutX="27.0" layoutY="14.0" onMouseClicked="#onReturn" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
